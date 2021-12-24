@@ -1,0 +1,126 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Window Pong</title>
+		<meta http-equiv="content-type" content="text/xhtml; charset=utf-8" />
+		<link rel="stylesheet" type="text/css" href="./lib/style.css?ver=201103011219" />
+		<script type="text/javascript" src="./lib/jquery.js" ></script>
+		<script type="text/javascript" src="./lib/pong.js?ver=201103011821"></script>
+	</head>
+	<body>
+		<div id="main_pad">
+
+<script async src="https://arc.io/widget.min.js#SXrvhKhG"></script>
+
+
+			<!--  Browser Pong  -->
+
+
+
+			<!--  Winnings  -->
+
+			<div id="winnings">
+				<div id="player1wins"><p></p></div>
+				<div id="player2wins"><p></p></div>
+			</div>
+
+
+			<!--  Pong Buttons  -->
+
+			<ul class="buttons">
+				<li class="b_player1up" style="visibility: hidden" onclick="if( pla1 || !pla1.closed ) pla1.go_up()">
+					<p>Up<br /><strong>A</strong></p>
+				</li>
+				<li class="b_player1down" style="visibility: hidden" onclick="if( pla1 || !pla1.closed ) pla1.go_down()">
+					<p>Down<br /><strong>Z</strong></p>
+				</li>
+				<li class="b_player1bot exclude">
+					<p>Human?<br /><input id="robot1" name="robot1" type="checkbox" /></p>
+				</li>			    
+			
+			
+				<li class="b_play" onclick="play()">
+					<p>Play<br /><strong>P</strong></p>
+				</li>
+				<li class="b_sound" onclick="audio.toggle()">
+					<p>Sound<br /><strong>S</strong></p>
+				</li>
+				<li class="b_quit" onclick="quit()">
+					<p>Quit<br /><strong>Q</strong></p>
+				</li>							
+				<li class="b_pause" onclick="pause()">
+					<p>Pause</p>
+				</li>
+
+
+				<li class="b_player2up" style="visibility: hidden" onclick="if( pla2 || !pla2.closed ) pla2.go_up()">
+					<p>Up<br /><strong>&uarr;</strong></p>
+				</li>
+				<li class="b_player2down" style="visibility: hidden" onclick="if( pla2 || !pla2.closed ) pla2.go_down()">
+					<p>Down<br /><strong>&darr;</strong></p>
+				</li>
+				<li class="b_player2bot exclude">
+					<p>Human?<br /><input id="robot2" name="robot2" type="checkbox" checked/></p>
+				</li>
+			</ul>
+
+
+			<!--  More Information  -->
+
+			<p>
+				Disable your popup blocker.<br />
+				Made by TWTG.<br />
+                <br> <br>
+			</p>
+
+
+            <p>
+				Controls:<br />
+				Player 1: A = Up, Z = Down<br />
+                Player 2: ↑ = Up, ↓ = Down<br />
+			</p>
+
+
+
+			<div id="footer">
+				<div class="pad">
+					Made with love by TWTG
+				</div>
+			</div>
+			
+
+			<!--  Aural  -->
+		
+			<div id="audio"></div>
+		</div>
+		
+		
+		<!--  Console  -->
+		
+		<div id="console">
+			<div class="pad">
+				[Nothing to report yet.]
+			</div>
+		</div>
+
+
+
+
+		<!--  Google Analytics  -->
+
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push([ '_setAccount', 'UA-3087756-3' ]);
+			_gaq.push([ '_trackPageview' ]);
+
+			(function()
+			{
+				var ga   = document.createElement( 'script' );
+				ga.type  = 'text/javascript';
+				ga.async = true;
+				ga.src   = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s    = document.getElementsByTagName( 'script' )[0];
+				s.parentNode.insertBefore( ga, s );
+			})();
+		</script>
+	</body>
+</html>
